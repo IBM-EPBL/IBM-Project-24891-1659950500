@@ -1,0 +1,117 @@
+ASSIGNMENT 4
+TEAM LEADER: T.R.SUDHAKAR
+TEAM MEMBER: V.DEVENDIRAN
+TEAM MEMBER: S.RAVIKUMAR
+TEAM MEMBER: R.SATISH
+
+
+1.db2 create table professional.employee(id int, name 
+varchar(50),jobrole varchar(30),joindate date, 
+salary double) in ts1 
+Isert queries:
+db2 insert into professional.customer(custid, fullname, phone) 
+values(100,'ravi','9898989')
+db2 insert into professional.customer(custid, fullname, phone) 
+values(100,'ravi','9898989')
+(101,'krathi','87996659')
+(102,'gopal','768678687')
+(103,'mani','9898989')
+ (104,'shilpa','87996659')
+ (105,'meena','768678687')
+ (106,'praveen','9898989')
+ (107,'srinivas','87996659')
+ (108,'magesh','768678687')
+ 
+ 
+2.CREATE TABLE recipes (
+ recipe_id INT NOT NULL,
+ recipe_name VARCHAR(30) NOT NULL,
+ PRIMARY KEY (recipe_id),
+ UNIQUE (recipe_name)
+);
+INSERT QUERIES:
+INSERT INTO recipes 
+ (recipe_id, recipe_name) 
+VALUES 
+ (1,"Tacos"),
+ (2,"Tomato Soup"),
+ (3,"Grilled Cheese")
+ (4,"chicken biriyani")
+ (5,"mutton biriyani")
+ (6,"shawarma")
+ (7,"egg noodles")
+ (8,"BBQ")
+ (9,"VEG BIRIYANI")
+ (10,"sandwitch");
+3.CREATE TABLE ingredients (
+ ingredient_id INT NOT NULL, 
+ ingredient_name VARCHAR(30) NOT NULL,
+ ingredient_price INT NOT NULL,
+ PRIMARY KEY (ingredient_id), 
+ UNIQUE (ingredient_name)
+);
+INSERT QUERIES:
+INSERT INTO ingredients
+ (ingredient_id, ingredient_name, ingredient_price)
+VALUES 
+ (1, "Beef", 5),
+ (2, "Lettuce", 1),
+ (3, "Tomatoes", 2),
+ (4, "Taco Shell", 2),
+ (5, "Cheese", 3),
+ (6, "Milk", 1),
+ (7, "Bread", 2);
+4.CREATE TABLE recipe_ingredients (
+ recipe_id int NOT NULL, 
+ ingredient_id INT NOT NULL, 
+ amount INT NOT NULL,
+ PRIMARY KEY (recipe_id,ingredient_id)
+);
+INSERT QUERIES:
+INSERT INTO recipe_ingredients 
+ (recipe_id, ingredient_id, amount)
+VALUES
+ (1,1,1),
+ (1,2,2),
+ (1,3,2),
+ (1,4,3),
+ (1,5,1),
+ (2,3,2),
+ (2,6,1),
+ (3,5,1),
+ (3,7,2),
+ (1,3,2),
+ (1,4,3),
+ (1,5,1),
+ (2,3,2),
+ (2,6,1),
+ (1,3,2),
+ (1,4,3),
+ (1,5,1),
+ (2,3,2),
+ (2,6,1);
+ 
+5.CREATE TABLE groceries (
+ id INTEGER PRIMARY KEY,
+ name TEXT, 
+ quantity INTEGER );
+INSERT QUERIES:
+ INSERT INTO groceries
+ VALUES
+ (1, "Bananas", 4)
+ (2, "Peanut Butter", 1) 
+ (3, "Dark chocolate bars", 2)
+ (4, "DRAGON FRUIT", 1) 
+ (5, "pine apple", 4) 
+ (6, "gova", 1) 
+ (7, "apple", 2) 
+ (8, "orange", 1) 
+ (9, "pumkin", 3) 
+ (10, "grapes", 1) 
+ (11 "watermelon", 1) 
+6.db2 create table professional(id int, name 
+varchar(50),jobrole varchar(30),joindate date, 
+salary double) in ts1 
+Isert queries:
+ db2 insert into professional(custid, fullname, phone) 
+values(100,'ravi','9898989')
