@@ -1,0 +1,35 @@
+{% extends 'cust dashboard.html' %}
+
+{% block title %}
+    Welcome {{ customer.first_name }}
+{% endblock %}
+
+{% block right %}
+
+
+    <div class="profile-div">
+        <h1>Welcome to Customer Care Registry </h1>
+        <table class="prof-table">
+            <tr>
+                <td>First Name</td>
+                <td>  customer's first_name </td>
+            </tr>
+            <tr>
+                <td>Last Name</td>
+                <td> customer's last_name </td>
+            </tr>
+            <tr>
+                <td>Role</td>
+                <td>Customer</td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td> customer's email </td>
+            </tr>
+            <tr>
+                <td>Date of joining  </td>
+                <td>   Enter the date.   </td>
+            </tr>
+        </table>
+    </div>
+{% endblock %}

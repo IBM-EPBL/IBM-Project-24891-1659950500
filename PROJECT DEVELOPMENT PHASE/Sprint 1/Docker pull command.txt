@@ -1,0 +1,1 @@
+docker pull gayathrijd/customer-care-registry
